@@ -1,0 +1,11 @@
+version: '3.1'
+
+services:
+  dev_db:
+    image: postgres:10.6-alpine
+    ports:
+    - "5432:5432"
+    environment:
+      POSTGRES_PASSWORD: alviss
+      POSTGRES_USER: alviss
+      POSTGRES_DB: alviss_development
