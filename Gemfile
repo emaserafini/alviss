@@ -8,11 +8,13 @@ gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 3.11'
 gem 'webpacker'
 gem 'bootsnap', '>= 1.1.0', require: false
+gem 'clearance', '~> 1.16'
 
 group :development, :test do
   gem 'pry'
   gem 'rspec-rails', '~> 3.8'
   gem 'dotenv-rails', '~> 2.4'
+  gem 'factory_bot_rails'
 end
 
 group :development do
