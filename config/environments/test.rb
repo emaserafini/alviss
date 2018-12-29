@@ -45,4 +45,7 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+
+  # Clearance includes middleware that avoids wasting time spent visiting, loading, and submitting the sign in form.
+  config.middleware.use Clearance::BackDoor
 end
